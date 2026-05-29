@@ -60,37 +60,14 @@ AstrBot 插件，用于获取热榜内容，目前支持 GitHub 热榜。
 - 使用自定义的 OpenAI 兼容 `base_url`、`api_key` 和 `model`。
 - 如果缺少必需字段，摘要生成将返回配置错误。
 
-## 本地开发流程
+## 本地开发
 
-1. 编辑此仓库作为源代码。
-2. 将其同步到 `AstrBot/data/plugins/astrbot_plugin_trending/`。
-3. 在有意义的更改后重启 AstrBot。
-4. 测试 `/trending github` 命令。
-5. 通过 AstrBot 的 LLM 工具流程测试 AI 工具调用。
+1. 克隆此仓库到本地
+2. 将插件目录同步到 `AstrBot/data/plugins/astrbot_plugin_trending/`
+3. 修改代码后重启 AstrBot
+4. 测试 `/trending github` 命令
+5. 通过 AstrBot 的 LLM 工具流程测试 AI 工具调用
 
-## 测试
+## 许可证
 
-运行单元测试：
-```bash
-pytest
-```
-
-测试真实GitHub热榜获取：
-```bash
-python test_real_github.py
-```
-
-测试缓存功能：
-```bash
-python test_cache.py
-```
-
-## 运行时数据
-
-不要将运行时数据写回插件源目录。
-
-如果插件以后需要可变的运行时文件，请将它们存储在：
-
-```text
-AstrBot/data/plugin_data/trending/
-```
+MIT License

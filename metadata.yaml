@@ -1,7 +1,7 @@
 name: trending
 display_name: GitHub热榜
 version: 0.1.0
-author: Codex
+author: luo
 desc: 获取GitHub热榜数据，通过AstrBot命令和AI工具提供服务。支持自动生成中文摘要，内置智能缓存机制。
 short_desc: GitHub热榜查询插件，支持命令调用和AI工具集成。
 astrbot_version: ">=4.16"
