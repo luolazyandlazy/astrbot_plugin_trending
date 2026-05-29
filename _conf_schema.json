@@ -1,0 +1,47 @@
+{
+  "summary_mode": {
+    "description": "选择中文摘要的生成方式：使用AstrBot当前模型或自定义OpenAI兼容模型。",
+    "type": "string",
+    "default": "astrbot_default",
+    "options": [
+      "astrbot_default",
+      "custom_openai_compatible"
+    ]
+  },
+  "custom_base_url": {
+    "description": "自定义OpenAI兼容端点的基础URL。例如：https://api.example.com/v1",
+    "type": "string",
+    "default": ""
+  },
+  "custom_api_key": {
+    "description": "当摘要模式为custom_openai_compatible时使用的API密钥。",
+    "type": "string",
+    "default": "",
+    "obvious_hint": "api_key"
+  },
+  "custom_model": {
+    "description": "当摘要模式为custom_openai_compatible时使用的模型名称。",
+    "type": "string",
+    "default": ""
+  },
+  "custom_timeout_seconds": {
+    "description": "自定义OpenAI兼容摘要请求的超时时间（秒）。",
+    "type": "int",
+    "default": 30
+  },
+  "request_timeout_seconds": {
+    "description": "获取热榜页面的请求超时时间（秒）。",
+    "type": "int",
+    "default": 20
+  },
+  "cache_ttl_seconds": {
+    "description": "缓存有效期（秒）。热榜数据将被缓存以减少对GitHub的请求。设置为0可禁用缓存。",
+    "type": "int",
+    "default": 300
+  },
+  "user_agent": {
+    "description": "请求热榜时使用的User-Agent请求头。",
+    "type": "string",
+    "default": "Mozilla/5.0 (AstrBot Trending Plugin)"
+  }
+}
